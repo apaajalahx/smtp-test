@@ -60,7 +60,7 @@ def check(sm):
         m = message.Message()
         x = sm.replace('\n','')
         o = x.split("|",6)
-        msg = "\nHOST: " + str(o[0]) + "\nPORT: " + str(o[1]) + "\nUSERNAME: " + str(o[2]) + "\nPASSWORD: " + str(o[3]) + "\nMAIL_FROM" + str(o[4])
+        msg = "\nHOST: " + str(o[0]) + "\nPORT: " + str(o[1]) + "\nUSERNAME: " + str(o[2]) + "\nPASSWORD: " + str(o[3]) + "\nMAIL_FROM :" + str(o[4])
         if '@' in str(o[4]):
             email = str(o[4])
         else:
